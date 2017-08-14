@@ -33,8 +33,19 @@
  */
 
 // Место для функции
-
-// console.log(multiplicationTable(9));
+// function multiplicationTable(number, i) {
+// 	if (!i) i = 0;
+//
+// 	if (i < 9) {
+// 		i++;
+// 		console.log(number + ' * ' + i + ' = ' + number * i);
+// 		return multiplicationTable(number, i);
+// 	} else {
+// 		return;
+// 	}
+// }
+//
+// multiplicationTable(6);
 
 /**
  * Написать таблицу умножение не используя циклов и рекурсии. Используйте замыкание;
@@ -72,17 +83,24 @@
  */
 
 // Место для функции
+function closingMultiplicationTable(number) {
+	var i = 0;
 
+	return function() {
+		i++;
+		console.log(number + ' * ' + i + ' = ' + number * i);
+	};
+}
 
-// var fn = closingMultiplicationTable(2);
+var fn = closingMultiplicationTable(2);
 
-// fn();
-// fn();
-// fn();
-// fn();
-// fn();
-// fn();
-// fn();
-// fn();
-// fn();
-// fn();
+fn();
+fn();
+fn();
+fn();
+fn();
+fn();
+fn();
+fn();
+fn();
+fn();
