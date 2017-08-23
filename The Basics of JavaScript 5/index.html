@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+	</head>
+	<body>
+
+	</body>
+	<script>
+			async const getEntity = ({ id }) => {
+			 if (!user.hasPermission('read')) throw new AuthException();
+			    
+			  if (!id) throw new ArgumentException();
+			    
+			  try {
+			   	console.log(`started: ${getTime()}`);
+			    
+			    let entity = cache.get(id);
+
+			    if (!entity) {
+			    	entity = await db.get(id);
+			     	cache.set(id, entity);
+			    }
+			    
+			    await console.log(`ended: ${getTime()}`);
+
+			    return entity;
+			  } catch (e) {
+			   throw e;
+			  }
+			}
+		
+
+		
+	</script>
+</html>
