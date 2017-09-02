@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ttt</title>
+		<style>
+			#content {
+				color: darkslategrey;
+			}
+			.post .comments {
+
+			}
+			input {
+				padding: 15px;
+				margin: 5px;
+				font-size: 15px;
+				border-radius: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--<span id="first">Our text</span>-->
+
+		<div id="content"></div>
+
+		<span>Hello World!</span>
+		<span>Hello World!</span>
+		<span>Hello World!</span>
+		<span>Hello World!</span>
+		<span>Hello World!</span>
+
+		<input class="default-name" type="text" name="name" placeholder="Name" onkeyup="getData('name')">
+		<input class="default-age" type="number" name="age" placeholder="Age"  onkeyup="getData('age')">
+		<button class="btn" onclick="getData()">Send <div>Hello</div></button>
+
+		<div class="user-info">
+			<h3 class="user-info-name"></h3>
+			<h5 class="user-info-age"></h5>
+		</div>
+
+		<div class="post">1</div>
+		<div class="post">2</div>
+		<div class="post">3</div>
+
+		<div class="post">
+			<div class="comments">1</div>
+			<div class="comments">2</div>
+			<div class="comments">3</div>
+		</div>
+
+		<div class="main-post">
+			<div class="image">1</div>
+			<div class="image">2</div>
+
+			<div class="title">Title</div>
+
+			<div class="description">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ex magni nobis! Aliquam dolore
+				dolorem esse incidunt, nesciunt placeat quas tempora tenetur? Aut blanditiis cupiditate in laboriosam
+				molestiae obcaecati, sapiente.
+			</div>
+
+			<div class="comments">
+				<div class="comment">
+					1
+				</div>
+				<div class="comment">
+					2
+				</div>
+				<div class="comment">
+					3
+				</div>
+			</div>
+		</div>
+
+		<script src="js/index.js"></script>
+	</body>
+</html>
